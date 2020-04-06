@@ -21,9 +21,6 @@
 
 const sectionElement = document.querySelectorAll('section');
 const createNav = document.querySelector('#navbar__list');
-const menuLink = document.querySelectorAll('.menu__link')
-const dataNavs = document.querySelectorAll('[data-nav]')
-
 /**
  * End Global Variables*/
 
@@ -35,7 +32,6 @@ sectionElement.forEach( (e) => {
 
     // store data-nav attribute in a value
     let dataNav = e.getAttribute('data-nav');
-    
 
     // add class to li
     createdLi.classList.add('menu__link');
@@ -66,7 +62,6 @@ function isInViewport(e) {
         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && 
         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
-  
 }
 
 // Add class 'active' to section when near top of viewport
@@ -92,9 +87,10 @@ for (let i = 0; i < sectionElement.length; i++) {
     // click event listener with smooth scroll
     anchor.addEventListener('click', (e) => {
         e.preventDefault();
-        element.scrollIntoView({behavior: "smooth" });
+        element.scrollIntoView({
+            behavior: "smooth" 
+        });
     });
-    
 }
 
 
