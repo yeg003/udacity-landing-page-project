@@ -60,7 +60,7 @@ main {
 
 section {
     position: relative;
-    min-height: 80vh;
+    min-height: 90vh;
 }
 
 
@@ -131,6 +131,7 @@ section {
     .landing__container {
         max-width: 50em;
         padding: 4em;
+        
     }
 }
 
