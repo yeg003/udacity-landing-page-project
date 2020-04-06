@@ -7,4 +7,4 @@ Multi-section landing page, with a dynamically smooth scrolling updating navigat
 
 # Built With
 
- built with HTML, CSS and JavaScript. 
+ Built with HTML, CSS and JavaScript. 
